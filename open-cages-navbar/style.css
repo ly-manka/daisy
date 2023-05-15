@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: 'Raleway',"Helvetica","Arial", sans-serif;
+    height: 2000px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    height: 100vh;
+    background-color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('https://opencages.com.ua/_nuxt/img/homepage.0151b74.jpg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-attachment: fixed;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+header::after {
+    background: #0c3632;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .85;
+    position: absolute;
+    top: 0;
+    transition: all .25s ease;
+    width: 100%;
+}
+
+.nav {
+    position: absolute;
+    width: calc(100% - 40px);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-link {
+    position: relative;
+    transition: all .25s ease;
+}
+
+.nav-list-link::after {
+    background: #17baaa;
+    bottom: -8px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all .25s ease;
+    width: 100%;
+}
+
+.nav-list-link:hover {
+    color: #17baaa;
+}
+
+.nav-list-link:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-list li {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.nav-list li:last-of-type {
+    padding-right: 0;
+}
+
+.nav-list li:last-of-type a {
+    display: flex;
+    align-items: center;
+    background-color: #dd3d53;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.nav-list li:last-of-type a:hover {
+    background: #c9233a;
+    transition: all .25s ease;
+}
+
+.nav-list li:last-of-type a svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.nav-toggle {
+    color: white;
+    font-size: 32px;
+    display: none; 
+}
+
+.burger-icon {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    vertical-align: -0.125em;
+    cursor: pointer;
+}
+
+.main-text {
+    font-weight: 700;
+    color: white;
+    position: relative;
+    z-index: 1;
+    line-height: 84px;
+    margin: auto 0;
+}
+
+.h1-text {
+    font-size: 56px;
+}
+
+.h1-text span {
+    color: #17baaa;
+}
+
+.button-link {
+    background-color: #17baaa;
+    font-size: 14px;
+    padding: 0 30px;
+    height: 40px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    transition: all .25s ease;
+}
+
+.button-link:hover {
+    background-color: #129185;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-list {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+.test-1 {
+    color: red;
+}
+
+
+.test-3 + div {
+    font-size: 32px;
+    font-weight: 700;
+    color: green;
+}
+
+p {
+    line-height: 32px;
+}
+
+span {
+    line-height: 32px;
+}
