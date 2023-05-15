@@ -1,0 +1,42 @@
+body {
+    background-color: #463d36;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 600px;
+    margin: 100px auto;
+    color: #463d36;
+}
+
+.working-hours, .product, .button {
+    text-transform: uppercase;
+}
+
+.working-hours {
+    color: #a6192e;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.product {
+    font-size: 40px;
+    margin-top: 0;
+    font-weight: 100;
+}
+
+.product-desc {
+    font-size: 28px;
+}
+
+.button {
+    background-color: #463d36;
+    color: white;
+    padding: 30px 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
